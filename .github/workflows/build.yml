@@ -19,7 +19,7 @@ jobs:
       - name: setup
         run: ./setup.sh
       - name: Log in to the Container registry
-        uses: docker/login-action@v1.10.0
+        uses: docker/login-action@v2.0.0
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
